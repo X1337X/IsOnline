@@ -1,0 +1,12 @@
+name: IsOnline
+main: x1337x.IsOnline.IsOnline
+version: 1.0
+description: Tells you if a certain player is online or not
+
+authors:
+  - x1337x
+commands:
+  isonline:
+     description: Tells you if a certain player is online or not
+     usage: /<command> playername
+  
