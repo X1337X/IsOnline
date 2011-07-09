@@ -1,6 +1,6 @@
 name: IsOnline
 main: x1337x.IsOnline.IsOnline
-version: 1.0
+version: 1.1
 description: Tells you if a certain player is online or not
 
 authors:

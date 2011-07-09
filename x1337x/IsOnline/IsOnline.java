@@ -11,12 +11,13 @@ public class IsOnline extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		// TODO Auto-generated method stub
-		
+		this.getServer().getLogger().log(Level.INFO, "IsOnline is disabled!");
 	}
 
 	@Override
 	public void onEnable() {
 		// TODO Auto-generated method stub
+
 		this.getServer().getLogger().log(Level.INFO, "IsOnline is enabled!");
 		this.getCommand("isonline").setExecutor(new IsOnlineCommand(this));
 	}

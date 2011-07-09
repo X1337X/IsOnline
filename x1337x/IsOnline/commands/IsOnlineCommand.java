@@ -18,7 +18,7 @@ public class IsOnlineCommand implements CommandExecutor {
 			String[] arg3) {
 		// TODO Auto-generated method stub
 		int length = arg3.length;
-		if(length == 0){
+		if(length == 0 || length > 1){
 			arg0.sendMessage(ChatColor.YELLOW + "IsOnline : " + ChatColor.RED + "Usage is /isonline playername");
 		}
 		else if(length == 1){
@@ -48,4 +48,6 @@ public boolean online(String name){
 	}
 	return false;
 }
+
+
 }
