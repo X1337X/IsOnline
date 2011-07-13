@@ -9,9 +9,9 @@ import org.bukkit.entity.Player;
 import x1337x.IsOnline.IsOnline;
 
 public class IsOnlineCommand implements CommandExecutor {
-    IsOnline plugin;
+    static IsOnline plugin;
     public IsOnlineCommand(IsOnline plugin){
-    	this.plugin = plugin;
+    	IsOnlineCommand.plugin = plugin;
     }
 	@Override
 	public boolean onCommand(CommandSender arg0, Command arg1, String arg2,
@@ -38,8 +38,8 @@ public class IsOnlineCommand implements CommandExecutor {
 		return true;
 	
 }
-public boolean online(String name){
-	for(Player p : this.plugin.getServer().getOnlinePlayers()){
+public static boolean online(String name){
+	for(Player p : plugin.getServer().getOnlinePlayers()){
 		String pname = p.getDisplayName();
 		if(pname.equalsIgnoreCase(name)){
 			return true;

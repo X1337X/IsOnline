@@ -1,6 +1,6 @@
 name: IsOnline
 main: x1337x.IsOnline.IsOnline
-version: 1.1
+version: 2.0
 description: Tells you if a certain player is online or not
 
 authors:
@@ -9,4 +9,12 @@ commands:
   isonline:
      description: Tells you if a certain player is online or not
      usage: /<command> playername
-  
+  io:
+     description: Tells you if a certain player is online or not
+     usage: /<command> playername
+  friend:
+     description: Add.remove a friend from your frie
+     usage: /<command> add/remove playername
+  f:
+     description: Tells you if a certain player is online or not
+     usage: /<command> add/remove playername
